@@ -10,9 +10,15 @@ box-sizing: border-box;
 .grid-container{
 
 
+    /* defino el display grid */
     display: grid;
+    /* defino el template de columnas y filas
+    puedo usar la funcion repeat() o hacerlo 1fr 1fr 1fr
+    fr significa fraccion */
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(5, 1fr);
+
+    /*puedo definir las diferentes secciones de la pagina en areas*/
     grid-template-areas: 
     
             'header header header'
@@ -21,7 +27,7 @@ box-sizing: border-box;
             'aside main main'
             'footer footer footer'
             
-            
+
 }
 
 .hijo1{
@@ -33,7 +39,7 @@ box-sizing: border-box;
 .hijo2{
    
     grid-area: main;
-    background-color: limegreen;
+    background-color: palevioletred;
 }
 
 .hijo3{
