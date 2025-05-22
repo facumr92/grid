@@ -79,12 +79,12 @@ font-family: Arial, Helvetica, sans-serif;
 }
 
 
-/* defino la mediaquery para anchos menores que 768px tiene menor soporte ya que es nueva. 
+/*  defino la mediaquery para anchos menores que 768px tiene menor soporte ya que es nueva. 
     puedo usar tambien la sintaxis antigua @media (max-width: 768px) tiene mayor soporte
 */
 
 
-@media(width< 768px){
+@media(width> 500px) and (width <768px){
 
 body{
 
